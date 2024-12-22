@@ -38,12 +38,12 @@
 这里放一些实际演示的图片，在iPhone12上演示：
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="./Pic/show/1.png" alt="money" style="width: 30%;"/>
-  <img src="./Pic/show/2.png" alt="money" style="width: 30%;"/>
-  <img src="./Pic/show/3.png" alt="money" style="width: 30%;"/>
-  <img src="./Pic/show/4.png" alt="money" style="width: 30%;"/>
-  <img src="./Pic/show/5.png" alt="money" style="width: 30%;"/>
-  <img src="./Pic/show/6.png" alt="money" style="width: 30%;"/>
+  <img src="./Pic/show/1.png" alt="1" style="width: 30%;"/>
+  <img src="./Pic/show/2.png" alt="2" style="width: 30%;"/>
+  <img src="./Pic/show/3.png" alt="3" style="width: 30%;"/>
+  <img src="./Pic/show/4.png" alt="4" style="width: 30%;"/>
+  <img src="./Pic/show/5.png" alt="5" style="width: 30%;"/>
+  <img src="./Pic/show/6.png" alt="6" style="width: 30%;"/>
 </div>
 
 ---
@@ -58,4 +58,4 @@ If you think it will help you, you can treat me to a cup of milk tea, thank you 
 
 如果你认为对你有帮助，并且帮到了你，你可以请我喝一杯咖啡，谢谢。
 
-<img src="./Pic/show/money.jpg" alt="money" style="zoom:33%;" />
+<img src="./Pic/show/money.jpg" alt="money" style="width: 33%;" />
