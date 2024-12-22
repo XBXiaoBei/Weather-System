@@ -1,0 +1,7 @@
+<view class="switch-language-box">
+	<picker bindchange="bindPickerChange" value="{{array[index].value}}" range="{{array}}" range-key="name">
+		<view class="picker">
+			{{array[index].name}}
+		</view>
+	</picker>
+</view>

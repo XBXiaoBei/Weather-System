@@ -1,0 +1,97 @@
+.all{
+    margin-top: 30rpx;
+    padding: 10rpx 10rpx 0 10rpx;
+}
+.search{
+    width: 100%;
+    height: 90rpx;
+    display: flex;
+    align-items: center;
+    border: 1rpx solid black;
+    border-radius: 5rpx;
+    background-color: white;
+}
+.search input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+.search_list{
+    padding:0 10rpx;
+    width: 98%;
+}
+.list{
+    height: 90rpx;
+    font-size: 35rpx;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-left: black solid 1rpx;
+    border-right: black solid 1rpx;
+    border-bottom: black solid 1rpx;
+    text-indent: 10px;
+}
+.sel_city{
+    background-color: pink;
+}
+
+.one{
+    display: flex;
+    justify-content: space-between;
+    padding: 10rpx;
+}
+.place{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.place image{
+    width: 40rpx;
+    height: 40rpx;
+}
+
+/* two */
+.two{
+    margin-top: 130rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rpx;
+}
+.two image{
+    width: 320rpx;
+    height: 320rpx;
+}
+.p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* three */
+.three{
+    margin-top: 100rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rpx;
+}
+.t{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 80rpx;
+}
+.tt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

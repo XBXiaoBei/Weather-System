@@ -1,0 +1,169 @@
+.all{
+    margin-top: 30rpx;
+    padding: 10rpx 10rpx 0 10rpx;
+    /* background-color: #e0f7fa; */
+}
+.search{
+    width: 100%;
+    height: 90rpx;
+    display: flex;
+    align-items: center;
+    border: 1rpx solid black;
+    border-radius: 5rpx;
+    background-color: white;
+}
+
+.city-display {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    min-height: 40px; /* 确保固定高度 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.city-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    height: 24px; /* 固定名称高度，避免跳动 */
+    line-height: 24px;
+}
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 10px;
+}
+
+.search_list{
+    position: absolute; /* 绝对定位 */
+    top: 68px; /* 保证搜索框下方 60px 是搜索结果 */
+    left: 1%; /* 根据输入框居中对齐 */
+    width: 98%; /* 列表宽度与输入框一致 */
+    background-color: white; /* 防止内容被遮挡 */
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影美观效果 */
+    z-index: 2; /* 确保显示在其他内容前 */
+    max-height: 600px; /* 防止过长，溢出滚动 */
+    overflow-y: auto; /* 超过高度滚动 */
+    border-radius: 5px; /* 圆角效果 */
+}
+.list{
+    height: 90rpx;
+    font-size: 35rpx;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-left: black solid 1rpx;
+    border-right: black solid 1rpx;
+    border-bottom: black solid 1rpx;
+    text-indent: 10px;
+}
+.sel_city{
+    background-color: pink;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* two */
+.module {
+    margin-top: 10px;
+    background-color: #e0f7fa;
+}
+.weather-scroll {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    overflow-x: scroll; /*开启横向滚动*/
+    height: 170px; /* 根据需要调整高度 */
+    padding: 0px 0px; /* 添加顶部和底部内边距 */
+  }
+.weather-item {
+    display: inline-block;
+    flex-direction: column; /* 垂直排列 */
+    align-items: center; /* 水平居中 */
+    justify-content: center; /* 垂直居中 */
+    width: 90px; /* 每个块的宽度 */
+    text-align: center; /* 内容居中 */
+    margin-right: 10px; /* 块之间的水平间距 */
+    box-sizing: border-box; /* 包含内边距在宽高内 */
+  }
+.temp {
+    font-size: 18px; /* 字体大小 */
+    font-weight: bold; /* 加粗 */
+    color: #333; /* 深灰色字体 */
+    margin-top: 15px;
+    margin-bottom: 20px; /* 和图标的垂直间距 */
+    display: block;
+}
+.icon {
+    width: 40px; /* 图标宽度 */
+    height: 40px; /* 图标高度 */
+    margin: 22px; /* 移除外边距 */
+    margin-bottom: 20px; /* 和图标的垂直间距 */
+    display: block;
+}
+.time {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 14px;
+    display: block;
+}
+
+
+.forecast-list {
+    display: flex;
+    flex-direction: column; /* 垂直排列每一行 */
+    gap: 10px; /* 每行之间的垂直间隔 */
+    padding: 10px; /* 整个容器的内边距 */
+    background-color: #e0f7fa; /* 深蓝色背景 */
+  }
+  .forecast-item {
+    display: flex;
+    flex-direction: row; /* 水平排列 */
+    align-items: center; /* 垂直居中 */
+    justify-content: space-between; /* 子元素均匀分布 */
+    padding: 10px 0; /* 每行上下内边距 */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* 底部分割线 */
+    color: white; /* 文字颜色 */
+    font-size: 14px; /* 字体大小 */
+  }
+  .forecast-date {
+    flex: 1; /* 分配宽度 */
+    text-align: left; /* 靠左对齐 */
+    color: black;
+  }
+  .forecast-day {
+    flex: 1;
+    text-align: center; /* 居中对齐 */
+    color: black;
+  }
+  .forecast-icon {
+    width: 40px; /* 图标宽度 */
+    height: 20px; /* 图标高度 */
+    margin: 0px; /* 移除外边距 */
+    margin-bottom: 0px; /* 和图标的垂直间距 */
+    margin-left: 26px;
+    display: block;
+  }
+  .forecast-temp-min {
+    flex: 1;
+    text-align: right; /* 靠右对齐 */
+    color: #87CEFA; /* 蓝色 */
+  }
+  .forecast-temp-max {
+    flex: 1;
+    text-align: right; /* 靠右对齐 */
+    color: #FFA500; /* 橙色 */
+  }
+  

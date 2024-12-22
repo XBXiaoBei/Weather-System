@@ -1,0 +1,81 @@
+<!-- tianqi -->
+<view class="all">
+    <view class="search">
+        <input type="text" placeholder="{{_t['请输入搜索城市']}}" bindinput="Input" value="{{inputValue}}"/>
+    </view>
+</view>
+
+<!-- 搜索列表 -->
+<view wx:if="{{search}}" class="search_list">
+    <block wx:for="{{city_all}}" wx:key="index">
+        <view class="list" hover-class="sel_city" hover-stay-time="150" bindtap="searchCity" data-id="{{index}}">{{item.name}}</view> 
+    </block>
+</view>
+
+<!-- 天气 -->
+<view class="container" wx:if="{{!search}}">
+    <!-- 第一块 -->
+    <view class="one">
+        <view class="place">
+            <image src="/Pic/dingwei.png" mode="" bind:tap="getnowweather"/>
+            <text>{{shi}}-{{qu}}</text>
+        </view>
+        <!-- <view class="time">
+            <text>更新时间 {{time}}</text>
+        </view> -->
+        <switchLanguage bindrefleshevent="reflesh"></switchLanguage>
+    </view>
+
+    <!-- 第二块 -->
+    <view class="two">
+        <view class="detail">
+            <view class="p">
+                <text style="font-size: 80rpx;font-weight: 500;padding-right: 15rpx;color: aquamarine;">{{temp}}℃</text>
+                <text>{{tianqi}}</text>
+            </view>
+            <view class="pp">
+                <text>{{fengxiang}} {{dengji}} {{_t['级']}}</text>
+                <text> | </text>
+                <text>{{_t['湿度为']}} {{humi}}%</text>
+            </view>
+        </view>
+        <image src="/Pic/QWeather-Icons-1.1.0/1.1.0/icons/{{icon}}.svg" mode=""/>
+        <view class="time">
+            <text>{{_t['更新时间']}} {{time}}</text>
+        </view>
+    </view>
+
+    <!-- 第三块 -->
+    <view class="three">
+        <!-- 区分1 -->
+        <view class="t">
+            <view class="tt">
+                <text style="color:deeppink;">{{jiangshui}}mm</text>
+                <text>{{_t['降水量']}}</text>
+            </view>
+            <view class="tt">
+                <text style="color:deeppink;">{{AQI}}℃</text>
+                <text>{{_t['体感温度']}}</text>
+            </view>
+            <view class="tt">
+                <text style="color:deeppink;">{{jiance}}KM</text>
+                <text>{{_t['能见度']}}</text>
+            </view>
+        </view>
+        <!-- 区分2 -->
+        <view class="t">
+            <view class="tt">
+                <text style="color:deeppink;">{{pa}}pa</text>
+                <text>{{_t['大气压']}}</text>
+            </view>
+            <view class="tt">
+                <text style="color:deeppink;">{{PM}}</text>
+                <text>PM2.5</text>
+            </view>
+            <view class="tt">
+                <text style="color:deeppink;">{{see}}</text>
+                <text>{{_t['空气质量']}}</text>
+            </view>
+        </view>
+    </view>
+</view>

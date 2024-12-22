@@ -1,0 +1,44 @@
+<!--pages/analysis/analysis.wxml-->
+<!-- <text>pages/analysis/analysis.wxml</text> -->
+<view class="all">
+    <view class="search">
+        <input type="text" placeholder='请输入城市' bindinput="Input" value="{{inputValue}}"/>
+    </view>
+    <view class="city-display">
+        <text class="city-name">{{name || 'City Name'}}</text>
+        <view class="divider"></view>
+    </view>
+</view>
+
+<view wx:if="{{search}}" class="search_list">
+    <block wx:for="{{city_all}}" wx:key="index">
+        <view class="list" hover-class="sel_city" hover-stay-time="150" bindtap="searchCity" data-id="{{index}}">{{item.name}}</view> 
+    </block>
+</view>
+
+<view class="module">
+  <scroll-view scroll-x="true" class="weather-scroll">
+    <block wx:for="{{weatherData}}" wx:key="index">
+      <view class="weather-item">
+        <text class="temp">{{item.temp}}°C</text>
+        <image class="icon" src="/Pic/QWeather-Icons-1.1.0/1.1.0/icons/{{item.icon}}.svg"></image>
+        <text class="time">{{item.time}}</text>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="divider"></view>
+</view>
+
+<view class="forecast-list">
+  <block wx:for="{{forecastData}}" wx:key="index">
+    <view class="forecast-item">
+      <text class="forecast-date">{{item.date}}</text>
+      <text class="forecast-day">{{item.day}}</text>
+      <image class="forecast-icon" src="/Pic/QWeather-Icons-1.1.0/1.1.0/icons/{{item.icon}}.svg"></image>
+      <text class="forecast-temp-min">{{item.tempMin}}°C</text>
+      <text class="forecast-temp-max">{{item.tempMax}}°C</text>
+    </view>
+  </block>
+</view>
+
+

@@ -1,0 +1,5 @@
+/* app.wxss */
+page {
+    background-color: #e0f7fa; /* 设置全局背景颜色为淡蓝色 */
+  }
+  

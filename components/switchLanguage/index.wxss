@@ -1,0 +1,13 @@
+/* components/switchLanguage/index.wxss */
+.switch-language-box {
+  position: fixed;
+  top: 73px;
+  right: 15px;
+  border: 1px solid gray;
+  background-color: white;
+}
+  
+  .picker {
+    font-size: 28rpx;  /* 设置字体大小 */
+    padding: 7rpx;    /* 设置内边距 */
+  }
