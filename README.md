@@ -37,11 +37,14 @@
 
 这里放一些实际演示的图片，在iPhone12上演示：
 
-<img src="./Pic/show/1.png" alt="money" style="zoom:33%;" /> <img src="./Pic/show/2.png" alt="money" style="zoom:33%;" /> <img src="./Pic/show/3.png" alt="money" style="zoom:33%;" /> 
-
-<img src="./Pic/show/4.png" alt="money" style="zoom:33%;" /> <img src="./Pic/show/5.png" alt="money" style="zoom:33%;" /> <img src="./Pic/show/6.png" alt="money" style="zoom:33%;" />
-
-
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="./Pic/show/1.png" alt="money" style="width: 30%;"/>
+  <img src="./Pic/show/2.png" alt="money" style="width: 30%;"/>
+  <img src="./Pic/show/3.png" alt="money" style="width: 30%;"/>
+  <img src="./Pic/show/4.png" alt="money" style="width: 30%;"/>
+  <img src="./Pic/show/5.png" alt="money" style="width: 30%;"/>
+  <img src="./Pic/show/6.png" alt="money" style="width: 30%;"/>
+</div>
 
 ---
 
