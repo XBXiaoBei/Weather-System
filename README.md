@@ -46,6 +46,12 @@
   <img src="./Pic/show/6.png" alt="6" style="width: 30%;"/>
 </div>
 
+
+阉割版本的小程序，可以自行体验：
+
+<img src="./Pic/goto.jpg" alt="money" style="width: 33%;" />
+
+
 ---
 
 本项目只用于学习，不用于商用，出现任何问题概不负责。
